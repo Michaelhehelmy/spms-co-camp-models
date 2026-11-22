@@ -24,11 +24,11 @@ plug-point environment variables (`ASSISTANT_LOCAL_MODEL_PATH`,
 
 ## How to use with the SPMS app
 
-The SPMS app (v1.3.5+) now auto-pulls the models by default: on app startup it
+The SPMS app now auto-pulls the models by default: on app startup it
 downloads them from this repo into its user-writable models dir
-(`DATA_DIR/assistant_models/`, e.g. `~/spms/data/assistant_models/`), verifies
-each file's sha256, and points the assistant at them — no manual steps. The
-repo URL and pull behavior are configurable in the app Settings
+(`DATA_DIR/assistant_models/`), verifies each file's sha256, and points
+the assistant at them — no manual steps. The repo URL and pull behavior
+are configurable in the app Settings
 (`assistant_models_repo`, `assistant_models_auto_pull`).
 
 For manual/older-app usage (or as a fallback), set the env vars (or the app
