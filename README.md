@@ -24,13 +24,22 @@ plug-point environment variables (`ASSISTANT_LOCAL_MODEL_PATH`,
 
 ## How to use with the SPMS app
 
-Set the env vars when launching the app (see
-[spms/co-camp/APP_INTEGRATION.md](https://github.com/Michaelhehelmy/spms/blob/main/co-camp/APP_INTEGRATION.md)):
+The SPMS app (v1.3.5+) now auto-pulls the models by default: on app startup it
+downloads them from this repo into its user-writable models dir
+(`DATA_DIR/assistant_models/`, e.g. `~/spms/data/assistant_models/`), verifies
+each file's sha256, and points the assistant at them — no manual steps. The
+repo URL and pull behavior are configurable in the app Settings
+(`assistant_models_repo`, `assistant_models_auto_pull`).
+
+For manual/older-app usage (or as a fallback), set the env vars (or the app
+settings) to point at the models:
 
 ```
 ASSISTANT_LOCAL_MODEL_PATH=<abs path>/model/SmolLM2-135M-Instruct-IQ3_M.gguf
 ASSISTANT_SETFIT_MODEL_DIR=<abs path>/models/assistant_intent_setfit
 ASSISTANT_SKLEARN_MODEL=<abs path>/models/assistant_intent_sklearn.joblib
 ```
+
+See the repo README on GitHub for details: https://github.com/Michaelhehelmy/spms-co-camp-models
 
 The SPMS app itself is a separate project (`Michaelhehelmy/spms`).
