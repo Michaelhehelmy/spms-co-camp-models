@@ -1,0 +1,88 @@
+{
+  "app": "spms",
+  "assistant": "Co-Camp",
+  "developer": "Michael Helmy",
+  "description": "Standalone repo with the Co-Camp small models for the SPMS app (Super Property Management System) — the Manager Assistant developed by Michael Helmy. All models run locally; no external API calls.",
+  "files": [
+    {
+      "path": "README.md",
+      "size": 1944,
+      "sha256": "77252906069b6ab31c01e5e6bbba02ef718feb3a87c6b8839e5f4ce937ba5ca8"
+    },
+    {
+      "path": "model/SmolLM2-135M-Instruct-IQ3_M.gguf",
+      "size": 90213472,
+      "sha256": "e8a0e942fe93529b7601a7620c8aa1bdc1bede40ff668ed9d6339686384392d7"
+    },
+    {
+      "path": "models/assistant_intent_setfit/1_Pooling/config.json",
+      "size": 90,
+      "sha256": "4fef0a7e8c8ee36e74c0fad89bab60ade72324442d43f559ea219bb7c2580710"
+    },
+    {
+      "path": "models/assistant_intent_setfit/README.md",
+      "size": 28037,
+      "sha256": "db093a878b52993f13a7fadb63879c477eb7be39e3f3e91c18108dee9ce39539"
+    },
+    {
+      "path": "models/assistant_intent_setfit/config.json",
+      "size": 746,
+      "sha256": "6ac0fe0ca2549efc5f832fd4e269ba0dae00a698dbecaedece6c1b3bcad84f4a"
+    },
+    {
+      "path": "models/assistant_intent_setfit/config_sentence_transformers.json",
+      "size": 284,
+      "sha256": "99edd883bde3f5cb3b80e55ca19336c15808022a0d3aa488702927831a2e4743"
+    },
+    {
+      "path": "models/assistant_intent_setfit/config_setfit.json",
+      "size": 796,
+      "sha256": "91cb31b5cd5566258303cc839207e9cbad894e8b9fd01c088b6dd8dabb12a106"
+    },
+    {
+      "path": "models/assistant_intent_setfit/metrics.json",
+      "size": 4503,
+      "sha256": "330037c7b959bdfb4dba9d2ea1d9577745ed3063cc34d86cac866bf56d90003a"
+    },
+    {
+      "path": "models/assistant_intent_setfit/model.safetensors",
+      "size": 69565312,
+      "sha256": "e172765737dbc89b2c778c4a1a409b7f9623874101f6640d51f8ddebb280727c"
+    },
+    {
+      "path": "models/assistant_intent_setfit/model_head.pkl",
+      "size": 50527,
+      "sha256": "e261a70ede90b2e2a54d138850d10e613b8fb349e9e75de3fd34894291e66396"
+    },
+    {
+      "path": "models/assistant_intent_setfit/modules.json",
+      "size": 277,
+      "sha256": "e4068aab8a95663636c4c28044a95eafdb6492387397ec8283d8f8b31078d645"
+    },
+    {
+      "path": "models/assistant_intent_setfit/sentence_bert_config.json",
+      "size": 241,
+      "sha256": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8"
+    },
+    {
+      "path": "models/assistant_intent_setfit/tokenizer.json",
+      "size": 711649,
+      "sha256": "2fc687b11de0bc1b3d8348f92e3b49ef1089a621506c7661fbf3248fcd54947e"
+    },
+    {
+      "path": "models/assistant_intent_setfit/tokenizer_config.json",
+      "size": 594,
+      "sha256": "8b36c0cf0c848bd288913ebda58682938f04ed4a6aaa0da8ddcc7157038cb9ec"
+    },
+    {
+      "path": "models/assistant_intent_sklearn.joblib",
+      "size": 196095,
+      "sha256": "7327e32553fad2ae6e96d15f8ac892368ac6a3d58c6f6c1244fbd606708ffaed"
+    }
+  ],
+  "env": {
+    "gguf": "ASSISTANT_LOCAL_MODEL_PATH",
+    "setfit_router": "ASSISTANT_SETFIT_MODEL_DIR",
+    "sklearn_router": "ASSISTANT_SKLEARN_MODEL"
+  }
+}
