@@ -3,6 +3,9 @@
   "assistant": "Co-Camp",
   "developer": "Michael Helmy",
   "description": "Standalone repo with the Co-Camp small models for the SPMS app (Super Property Management System) — the Manager Assistant developed by Michael Helmy. All models run locally; no external API calls.",
+  "gguf": "model/SmolLM2-135M-Instruct-IQ3_M.gguf",
+  "setfit_router": "models/assistant_intent_setfit",
+  "sklearn_router": "models/assistant_intent_sklearn.joblib",
   "files": [
     {
       "path": "README.md",
