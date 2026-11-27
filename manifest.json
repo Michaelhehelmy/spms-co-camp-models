@@ -2,15 +2,15 @@
   "app": "spms",
   "assistant": "Co-Camp",
   "developer": "Michael Helmy",
-  "description": "Standalone repo with the Co-Camp small models for the SPMS app (Super Property Management System) — the Manager Assistant developed by Michael Helmy. All models run locally; no external API calls.",
+  "description": "Co-Camp small models for SPMS (Super Property Management System) — Manager Assistant by Michael Helmy. Local-only; v2.3.6 max training data expansion in SPMS.",
   "gguf": "model/SmolLM2-135M-Instruct-IQ3_M.gguf",
   "setfit_router": "models/assistant_intent_setfit",
   "sklearn_router": "models/assistant_intent_sklearn.joblib",
   "files": [
     {
       "path": "README.md",
-      "size": 1944,
-      "sha256": "77252906069b6ab31c01e5e6bbba02ef718feb3a87c6b8839e5f4ce937ba5ca8"
+      "size": 2612,
+      "sha256": "e13bc040cc64292583db39f99cd0b159de727b82bf89bd12783ec8a21eda0376"
     },
     {
       "path": "model/SmolLM2-135M-Instruct-IQ3_M.gguf",
@@ -87,5 +87,14 @@
     "gguf": "ASSISTANT_LOCAL_MODEL_PATH",
     "setfit_router": "ASSISTANT_SETFIT_MODEL_DIR",
     "sklearn_router": "ASSISTANT_SKLEARN_MODEL"
+  },
+  "training_data": {
+    "spms_version": "2.3.6",
+    "intents_seed_rows": 9052,
+    "intent_labels": 69,
+    "persona_examples": 754,
+    "feedback_rows": 18,
+    "dataset_manifest": "spms:data/datasets/manifest.json",
+    "build_script": "spms:scripts/build_max_assistant_datasets.py"
   }
 }
